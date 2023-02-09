@@ -1,0 +1,123 @@
+:root{
+  --primary: #377DFF;
+  --light-blue: #BAC5DF;
+  --font-base: #A4A5A6;
+  --font-dark: #1E2022;
+  --link: #4787FF;
+  --accent: #00C9A6;
+
+   --size-5: .3125rem;
+   --size-10: .625rem;
+   --size-16: 1rem;
+   --size-20: 1.25rem;
+   --size-24: 1.5rem;
+   --size-30: 1.875rem;
+   --size-40: 2.5rem;
+   --size-50: 3.125rem;
+   --size-64: 4rem;
+   --size-100: 6.25rem;
+   --size-150: 9.375rem;
+}
+
+.container{
+  display:block;
+  margin:auto;
+  padding-bottom: var(--size-150);
+}
+
+header.container{
+  display:block;
+  position:sticky;
+  top:0;
+  left:0;
+  right:0;
+  background-color: #FDFEFF;
+  padding:var(--size-5) 0 var(--size-10);
+}
+
+h1, h2, h3, h4, h5, h6, a, p, span{
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+  font-size: var(--size-64);
+  font-weight: 600;
+}
+
+.container div h2:nth-child(1){
+  font-size: 50px;
+  font-weight: 550;
+  margin:0;
+}
+
+h3{
+  margin: 5px 0;
+  font-weight: 550;
+}
+
+h4{
+  font-size: 18px;
+  font-weight: 650;
+}
+
+h5{
+  text-align: center;
+  color:var(--font-base);
+}
+
+.container div h2,
+.container div p:nth-child(2){
+  text-align: center;
+  padding: 0 18.75rem;
+}
+
+.fine-print{
+  font-size: 18px;
+  color:#A4A5A6;
+}
+
+.card-logo{
+  height: 50px;
+  width: 50px;
+}
+
+a{
+  text-decoration: none;
+  color: var(--font-base)
+}
+
+.fa-solid{
+  font-size: 12px;
+}
+
+.btn{
+  border: 1px solid transparent;
+  text-align: center;
+  padding: var(--size-10) var(--size-20);
+  border-radius: var(--size-24);
+  background-color: var(--primary);
+}
+
+.btn a{
+  color:#FDFEFF
+}
+
+li{
+  list-style: none;
+}
+
+.push-right{
+  margin-left:auto;
+}
+
+.desc-tag{
+  margin-left: 8px;
+  padding: 4px 10px;
+  font-size: 14px;
+  border-radius: 16px;
+  font-weight: 700;
+}
+
+.link-lm{
+  color: var(--primary);
+}
