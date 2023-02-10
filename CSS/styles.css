@@ -294,7 +294,7 @@ div.why-icon-wrapper p.why-word{
 /* Pricing */
 .pricing div.price-card h2{
   padding: 0;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   text-align: left;
   display:inline-block;
   font-size: 80px;
@@ -304,6 +304,10 @@ div.why-icon-wrapper p.why-word{
   display: inline;
   margin: 0;
   font-weight:500;
+}
+
+.price-card p{
+  margin-bottom: 20px;
 }
 
 .pricing-content-wrapper{
@@ -316,9 +320,11 @@ div.why-icon-wrapper p.why-word{
 .price-card{
   grid-row: span 3;
   grid-column: span 4;
+  padding-right: 110px;
 }
 
 .features-card{
   grid-row: span 2;
   grid-column: span 3;
+  padding: 5px;
 }
