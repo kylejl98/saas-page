@@ -313,6 +313,12 @@ div.why-icon-wrapper p.why-word{
   margin-bottom: var(--size-20);
 }
 
+.price-card p:nth-child(5){
+  font-size: 10px;
+  padding-top: 10px;
+  color: var(--font-dark);
+}
+
 .container div.pricing p:nth-child(2){
   margin-bottom: var(--size-40);
 }
@@ -337,5 +343,5 @@ div.why-icon-wrapper p.why-word{
 }
 
 div.features-card img{
-  box-shadow: -5px 5px gray;
+  filter: drop-shadow(-5px 5px 2px var(--shadow))
 }
