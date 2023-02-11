@@ -1,8 +1,10 @@
 :root{
+  --main-bg: #DEDEDE;
   --primary: #377DFF;
   --light-blue: #BAC5DF;
   --font-base: #A4A5A6;
-  --font-dark: #1E2022;
+  --font-dark: #101010;
+  --font-subheading: #505050;
   --link: #4787FF;
   --accent: #00C9A6;
 
@@ -17,6 +19,10 @@
    --size-64: 4rem;
    --size-100: 6.25rem;
    --size-150: 9.375rem;
+}
+
+.body{
+  background-color: var(--main-bg);
 }
 
 .container{
@@ -69,6 +75,11 @@ h5{
 .container div p:nth-child(2){
   text-align: center;
   padding: 0 18.75rem;
+}
+
+
+.container div p:nth-child(2){
+  color:var(--font-subheading)
 }
 
 .fine-print{

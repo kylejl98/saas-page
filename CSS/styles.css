@@ -201,6 +201,7 @@ img.google-icon{
   display:flex;
   flex-direction: column;
   justify-content: center;
+  gap: 20px;
 }
 
 .why-icon-wrapper p{
@@ -231,6 +232,8 @@ div.why-icon-wrapper p.why-word{
   flex-wrap: nowrap;
   overflow: visible;
   word-wrap: none;
+  color: var(--font-dark);
+  font-weight: bold;
 }
 
 /* Testimonials */
@@ -307,7 +310,11 @@ div.why-icon-wrapper p.why-word{
 }
 
 .price-card p{
-  margin-bottom: 20px;
+  margin-bottom: var(--size-20);
+}
+
+.container div.pricing p:nth-child(2){
+  margin-bottom: var(--size-40);
 }
 
 .pricing-content-wrapper{
@@ -326,5 +333,9 @@ div.why-icon-wrapper p.why-word{
 .features-card{
   grid-row: span 2;
   grid-column: span 3;
-  padding: 5px;
+  padding: var(--size-20);
+}
+
+div.features-card img{
+  box-shadow: -5px 5px gray;
 }
