@@ -352,3 +352,61 @@ div.features-card img{
 }
 
 /* Hire Us */
+.hire-us{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 50px;
+  color: white;
+  background: url("../assets/abstract/hire-us-transparent-pattern-bg.svg");
+  background-color: var(--dark-navy);
+}
+
+.hire-us-header{
+  grid-row: 2 / span 4;
+  grid-column: 1 / span 2;
+  padding: 0 100px;
+}
+
+div.hire-us div.hire-us-header h2,
+div.hire-us div.hire-us-header p{
+  padding: 0px 0px var(--size-14);
+  margin: 0px 0px 0px 0px;
+  text-align: left;
+}
+
+.hire-us hr{
+  margin: 10px 0 20px;
+  max-width: 200px;
+  text-align: left;
+
+}
+
+.hire-us-form{
+  padding: 0px 0px 0px 0px;
+
+  grid-row: 1 / span 8;
+  grid-column: 3 / span 2;
+
+  display: grid;
+  /*TODO: ADD GRID TEMPLATE AREA LABELS TO HTML*/
+  grid-template-areas:
+  "Title  Title"
+  "First  Last"
+  "Email  Site"
+  "Budget Country"
+  "More   More"
+  "More   More"
+  "Mark   Mark"
+  "Button Button";
+}
+
+.hire-us p.quote{
+  font-size: 18px;
+  font-style: italic;
+}
+
+.hire-us h5{
+  text-align: left;
+  margin: 0px 0px 0px 0px;
+}

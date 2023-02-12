@@ -11,6 +11,7 @@
   --accent:          #00C9A6;
   --shadow:          #999999;
   --shadow-light:    #ACACAC;
+  --dark-navy:       #0D0D48;
 
   /*        Font Sizes       */
   --size-5:   .3125rem;
@@ -103,7 +104,7 @@ h5{
 
 /**/
 .fine-print{
-  font-size: 18px;
+  font-size: 12px;
   color:#A4A5A6;
 }
 
