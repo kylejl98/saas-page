@@ -1,7 +1,7 @@
 :root{
   /*      CSS Variables      */
   /*      Color Scheme       */
-  --main-bg:         #DEDEDE;
+  --main-bg:         #EFEFEF;
   --primary:         #377DFF;
   --light-blue:      #BAC5DF;
   --font-base:       #A4A5A6;
@@ -10,10 +10,12 @@
   --link:            #4787FF;
   --accent:          #00C9A6;
   --shadow:          #999999;
+  --shadow-light:    #ACACAC;
 
   /*        Font Sizes       */
   --size-5:   .3125rem;
   --size-10:  .625rem;
+  --size-12:  .75rem;
   --size-14:  .875rem;
   --size-16:  1rem;
   --size-20:  1.25rem;
@@ -27,7 +29,7 @@
 }
 
 /**/
-.body{
+body{
   background-color: var(--main-bg);
 }
 
@@ -45,7 +47,7 @@ header.container{
   top:0;
   left:0;
   right:0;
-  background-color: #FDFEFF;
+  background-color: var(--main-bg);
   padding:var(--size-5) 0 var(--size-10);
 }
 
@@ -96,6 +98,7 @@ h5{
 .container div p:nth-child(2){
   color:var(--font-subheading);
   font-size: var(--size-14);
+  margin-bottom: 60px;
 }
 
 /**/
@@ -157,4 +160,8 @@ li{
 /**/
 .link-lm{
   color: var(--primary);
+}
+
+.shadow{
+  box-shadow: -10px 10px 40px 10px var(--shadow-light);
 }

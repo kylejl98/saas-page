@@ -124,7 +124,6 @@ img.google-icon{
 }
 
 .benefit-card{
-  border: 1px solid black;
   padding: 20px;
   position: relative;
 }
@@ -297,10 +296,9 @@ div.why-icon-wrapper p.why-word{
 /* Pricing */
 .pricing div.price-card h2{
   padding: 0;
-  margin-bottom: 50px;
   text-align: left;
   display:inline-block;
-  font-size: 80px;
+  font-size: 60px;
 }
 
 .price-card h4{
@@ -313,27 +311,29 @@ div.why-icon-wrapper p.why-word{
   margin-bottom: var(--size-20);
 }
 
-.price-card p:nth-child(5){
+.price-card hr{
+  margin: var(--size-24) 0;
+}
+
+.price-card p:nth-child(6){
   font-size: 10px;
   padding-top: 10px;
   color: var(--font-dark);
 }
 
-.container div.pricing p:nth-child(2){
-  margin-bottom: var(--size-40);
-}
-
 .pricing-content-wrapper{
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
   gap: 10px;
 }
 
 .price-card{
   grid-row: span 3;
   grid-column: span 4;
-  padding-right: 110px;
+  margin: 30px;
+  padding: 30px;
+
 }
 
 .features-card{
@@ -345,3 +345,10 @@ div.why-icon-wrapper p.why-word{
 div.features-card img{
   filter: drop-shadow(-5px 5px 2px var(--shadow))
 }
+
+.price-card div.btn{
+  margin-top: var(--size-64);
+  max-width: fit-content;
+}
+
+/* Hire Us */
