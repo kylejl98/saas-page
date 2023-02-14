@@ -275,19 +275,19 @@
         </div>
         <div class="hire-us-form">
           <form>
-            <h3>Fill out this form and we'll be in touch as soon as possible.</h3>
-            <input type="text" name="first-name" placeholder="First Name">
-            <input type="text" name="last-name" placeholder="Last Name">
-            <input type="email" name="email" placeholder="Work Email">
-            <input type="text" name="website" placeholder="Company Website">
-            <select name="budget" id="budget">
+            <h3 class="form-title">Fill out this form and we'll be in touch as soon as possible.</h3>
+            <input class="form-first" type="text" name="first-name" placeholder="First Name">
+            <input class="form-last" type="text" name="last-name" placeholder="Last Name">
+            <input class="form-email" type="email" name="email" placeholder="Work Email">
+            <input class="form-site" type="text" name="website" placeholder="Company Website">
+            <select class="form-budget" name="budget" id="budget">
               <option value="default" selected hidden disabled>Budget</option>
               <option value="tier1">&lt; $1,000</option>
               <option value="tier2">$1,000 - $2,500</option>
               <option value="tier3">$2,500 - $5,000</option>
               <option value="tier4">&gt; $5,000</option>
             </select>
-            <select id="country" name="country">
+            <select class="form-country" id="country" name="country">
               <option selected hidden disabled>Country</option>
               <option value="US">United States</option>
               <option value="AF">Afghanistan</option>
@@ -542,15 +542,17 @@
               <option value="ZM">Zambia</option>
               <option value="ZW">Zimbabwe</option>
             </select>
-            <textarea name="more" id="more" placeholder="Tell us more about your project, needs, and timeline"></textarea>
-            <input type="checkbox" required>
-            <span class="fine-print">
-              Yes, I'd like to receive occasional marketing emails from Front. I have the irght to opt out at any time.
-              <span>
-                <a href="#">View privacy policy</a>
+            <textarea class="form-more" name="more" id="more" placeholder="Tell us more about your project, needs, and timeline"></textarea>
+            <div class="form-market">
+              <input type="checkbox" required>
+              <span class="fine-print">
+                Yes, I'd like to receive occasional marketing emails from Front. I have the irght to opt out at any time.
+                <span>
+                  <a href="#">View privacy policy</a>
+                </span>
               </span>
-            </span>
-            <button type="submit">Get Started</button>
+            </div>
+            <button class="form-button btn" type="submit">Get Started</button>
           </form>
 
         </div>

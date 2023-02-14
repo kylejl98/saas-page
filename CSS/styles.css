@@ -356,16 +356,15 @@ div.features-card img{
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 50px;
   color: white;
   background: url("../assets/abstract/hire-us-transparent-pattern-bg.svg");
   background-color: var(--dark-navy);
+  padding: 40px 80px;
+  overflow:auto;
 }
 
 .hire-us-header{
-  grid-row: 2 / span 4;
-  grid-column: 1 / span 2;
-  padding: 0 100px;
+  padding: 150px 75px;
 }
 
 div.hire-us div.hire-us-header h2,
@@ -383,22 +382,23 @@ div.hire-us div.hire-us-header p{
 }
 
 .hire-us-form{
-  padding: 0px 0px 0px 0px;
-
-  grid-row: 1 / span 8;
-  grid-column: 3 / span 2;
-
+  padding: 30px;
+  margin: 0px;
+  background-color: white;
+  grid-column-gap: 20px;
   display: grid;
-  /*TODO: ADD GRID TEMPLATE AREA LABELS TO HTML*/
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
   grid-template-areas:
+  "  .      .  "
   "Title  Title"
   "First  Last"
   "Email  Site"
   "Budget Country"
   "More   More"
-  "More   More"
-  "Mark   Mark"
-  "Button Button";
+  "Market Market"
+  "Button Button"
+  "  .      .  ";
 }
 
 .hire-us p.quote{
@@ -408,5 +408,68 @@ div.hire-us div.hire-us-header p{
 
 .hire-us h5{
   text-align: left;
-  margin: 0px 0px 0px 0px;
+}
+
+.form-title{
+  grid-area: Title;
+  color: var(--font-dark)
+}
+
+.form-first{
+  grid-area: First;
+}
+
+.form-last{
+  grid-area: Last;
+}
+
+.form-email{
+  grid-area: Email;
+}
+
+.form-site{
+  grid-area: Site;
+}
+
+.form-budget{
+  grid-area: Budget;
+}
+
+.form-country{
+  grid-area: Country;
+}
+
+.form-more{
+  grid-area: More;
+}
+
+.form-market{
+  grid-area: Market;
+  padding: 25px 5px 0px;
+  display:flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: baseline;
+}
+
+.form-button{
+  grid-area: Button;
+}
+
+.hire-us-form h3{
+  font-weight: bold;
+}
+
+.hire-us-form input, .hire-us-form select{
+  max-height: 50px;
+}
+
+.form-market .fine-print{
+  padding-right: 20px;
+}
+
+.hire-us-form .btn{
+  border-radius: initial; 
+  color: white;
+  margin: 0px 20px;
 }
