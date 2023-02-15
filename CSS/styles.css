@@ -374,6 +374,16 @@ div.hire-us div.hire-us-header p{
   text-align: left;
 }
 
+div.hire-us div.hire-us-header p:nth-child(2){
+  color: var(--shadow-light);
+}
+
+.hire-us-header h5{
+  color: white;
+  margin: 10px 0px 0px;
+  text-align: left;
+}
+
 .hire-us hr{
   margin: 10px 0 20px;
   max-width: 200px;
@@ -472,4 +482,23 @@ div.hire-us div.hire-us-header p{
   border-radius: initial; 
   color: white;
   margin: 0px 20px;
+}
+
+.hire-us-images{
+  display:flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 30px;
+}
+
+.img-small{
+  border-radius: 100%;
+  width: 30px;
+  height: 30px; 
+}
+
+.img-large{
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
 }
