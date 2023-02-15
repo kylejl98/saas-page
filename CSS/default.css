@@ -27,6 +27,10 @@
   --size-64:  4rem;
   --size-100: 6.25rem;
   --size-150: 9.375rem;
+
+
+  --responsive-max-width: 1175px;
+  --header-width: calc(calc(100vw - var(--responsive-max-width)) / 2)
 }
 
 /**/
