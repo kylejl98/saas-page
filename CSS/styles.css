@@ -504,3 +504,21 @@ div.hire-us div.hire-us-header p:nth-child(2){
   width: 50px;
   height: 50px;
 }
+
+/* Footer */
+footer{
+  display:flex;
+  flex-direction: column;
+}
+
+.footer-a,
+.footer-b,
+.footer-c{
+  display:flex;
+  flex-direction: row;
+}
+
+.footer-a section{
+  display:flex;
+  flex-direction: column;
+}
