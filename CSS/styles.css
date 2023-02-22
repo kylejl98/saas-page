@@ -392,22 +392,21 @@ div.hire-us div.hire-us-header p:nth-child(2){
 }
 
 .hire-us-form{
-  padding: 30px 30px 50px;
+  padding: 30px 54px 50px;
   margin: 0px;
   background-color: white;
-  grid-column-gap: 20px;
+  gap: 30px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
   grid-template-areas:
-  "  .      .  "
-  "Title  Title"
-  "First  Last"
-  "Email  Site"
-  "Budget Country"
-  "More   More"
-  "Market Market"
-  "Button Button";
+    "  .      .  "
+    "Title  Title"
+    "First  Last"
+    "Email  Site"
+    "Budget Country"
+    "More   More"
+    "Market Market"
+    "Button Button";
 }
 
 .hire-us p.quote{
@@ -449,6 +448,7 @@ div.hire-us div.hire-us-header p:nth-child(2){
   grid-area: More;
   font-size: 16px;
   padding: 5px;
+  height: 100px;
 }
 
 .form-market{
@@ -457,21 +457,23 @@ div.hire-us div.hire-us-header p:nth-child(2){
   display:flex;
   flex-direction: row;
   gap: 5px;
-  align-items: baseline;
 }
 
 .form-button{
   grid-area: Button;
+  height: initial;
+  align-self: baseline;
 }
 
 .hire-us-form h3{
   font-weight: bold;
 }
 
-.hire-us-form input, .hire-us-form select{
+.hire-us-form input, 
+.hire-us-form select{
   padding: 0 var(--size-5);
   font-size: var(--size-16);
-  max-height: 50px;
+  height: 50px;
 }
 
 .form-market .fine-print{
