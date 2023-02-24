@@ -509,6 +509,7 @@ div.hire-us div.hire-us-header p:nth-child(2){
 footer{
   display:flex;
   flex-direction: column;
+  gap: 30px;
 }
 
 .footer-a,
@@ -516,9 +517,54 @@ footer{
 .footer-c{
   display:flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .footer-a section{
   display:flex;
   flex-direction: column;
+}
+
+.footer-a section ul{
+  margin: 0;
+  padding: 0;
+}
+
+.footer-a section ul li{
+  margin:0;
+  padding-top: 20px;
+}
+
+.footer-a h4{
+  margin: 0;
+}
+
+.footer-a .contact{
+  padding-top: 20px;
+}
+
+.footer-a .contact i,
+.footer-a .contact .fine-print,
+.footer-a section ul li a{
+  font-size: 16px;
+  color: var(--font-subheading);
+}
+
+.footer-a section ul li .desc-tag{
+  background-color: var(--primary);
+  color: var(--main-bg);
+  border-radius: 7px;
+}
+
+.footer-a section img{
+  max-width: 175px;
+}
+
+.footer-b .ft-disclosure span{
+  padding: 0px 20px;
+}
+
+.footer-b .ft-social a{
+  padding-right: 5px;
+  background-color: var(--font-base);
 }

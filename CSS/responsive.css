@@ -3,9 +3,10 @@
     max-width: 1175px;
   }
 
-  header.container{
+  header.container,
+  footer{
     max-width:initial;
-    padding: 5px var(--header-width);
+    padding: 5px var(--page-width);
   }
 }
 

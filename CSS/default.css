@@ -30,7 +30,7 @@
 
 
   --responsive-max-width: 1175px;
-  --header-width: calc(calc(100vw - var(--responsive-max-width)) / 2)
+  --page-width: calc(calc(100vw - var(--responsive-max-width)) / 2)
 }
 
 /**/
