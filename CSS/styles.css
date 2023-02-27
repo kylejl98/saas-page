@@ -1,6 +1,10 @@
 /* Header */
+
+body .grad-background{
+  background: conic-gradient(from 78deg at 20% 90%, var(--main-bg)50%, var(--gradient-mid));
+}
+
 header{
-  background-color: #FEFDFC;
   z-index: 100;
 }
 
@@ -284,8 +288,7 @@ div.why-icon-wrapper p.why-word{
 
 .tes-logo-wrapper{
   display:flex;
-  justify-content: center;
-  gap: 150px;
+  justify-content: space-around;
   padding-top: 40px;
 }
 
@@ -565,6 +568,9 @@ footer{
 }
 
 .footer-b .ft-social a{
-  padding-right: 5px;
-  background-color: var(--font-base);
+  padding-right: 30px;
+}
+
+.footer-c{
+  text-align: center;
 }
