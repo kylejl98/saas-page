@@ -56,6 +56,7 @@ header nav img{
 .container div.intro p{
   font-size: 18px;
   padding: 0 0 var(--size-20);
+  margin-bottom: 18px;
   text-align: left;
 }
 
