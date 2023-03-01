@@ -31,7 +31,7 @@
   --size-150: 9.375rem;
 
 
-  --responsive-max-width: 1175px;
+  --responsive-max-width: 1024px;
   --page-width: calc(calc(100vw - var(--responsive-max-width)) / 2)
 }
 
@@ -65,13 +65,13 @@ h1, h2, h3, h4, h5, h6, a, p, span, textarea{
 
 /**/
 h1{
-  font-size: var(--size-64);
+  font-size: 48px;
   font-weight: 600;
 }
 
 /**/
 .container div h2:nth-child(1){
-  font-size: 50px;
+  font-size: 36px;
   font-weight: 550;
   margin:0;
 }

@@ -1,6 +1,6 @@
 @media screen and (min-width: 1200px){
   .container{
-    max-width: 1175px;
+    max-width: var(--responsive-max-width);
   }
 
   header.container,
