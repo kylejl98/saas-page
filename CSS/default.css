@@ -8,7 +8,7 @@
   --font-subheading:#505050;
   --gradient-dark:  #bfc9d3;
   --gradient-mid:   #EEF2F6;
-  --light-blue:     #BAC5DF;
+  --light-blue:     #f6f6ff;
   --link:           #4787FF;
   --main-bg:        #FFFFFF;
   --primary:        #377DFF;
@@ -32,7 +32,8 @@
 
 
   --responsive-max-width: 1024px;
-  --page-width: calc(calc(100vw - var(--responsive-max-width)) / 2)
+  --page-width: calc(calc(100vw - var(--responsive-max-width)) / 2);
+  --background-width: 100vw;
 }
 
  
@@ -85,8 +86,8 @@ h3{
 
 /**/
 h4{
-  font-size: 18px;
-  font-weight: 650;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 /**/
@@ -135,7 +136,7 @@ a{
 .btn{
   border: 1px solid transparent;
   text-align: center;
-  padding: var(--size-10) var(--size-20);
+  padding: 10px 10px;
   border-radius: var(--size-24);
   background-color: var(--primary);
 }

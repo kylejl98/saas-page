@@ -25,6 +25,10 @@ header{
   padding-left: var(--size-10);
 }
 
+.header-demo a{
+  font-size: 12px;
+}
+
 .header-demo a span.fa-angle-down{
   padding-left: var(--size-5);
 }
@@ -140,8 +144,8 @@ img.google-icon{
 
 .benefit-card p{
   margin: 0;
-  padding: 10px 0 40px;
-  font-size: 14px;
+  padding: 5px 0 30px;
+  font-size: 12px;
 }
 
 .benefit-card a{
@@ -157,7 +161,7 @@ img.google-icon{
 /* Perspectives */
 .perspectives{
   display:flex;
-  background-color: #d5d5d5;
+  background-color: var(--light-blue);
   gap: 50px;
   padding-top: 75px;
 }
@@ -185,6 +189,11 @@ img.google-icon{
   max-width: 80%;
   display:block;
   margin:auto;
+}
+
+.container div.why-front p{
+  padding: 0 240px 0;
+  margin-bottom: 25px;
 }
 
 .why-icon-layout{
@@ -271,13 +280,13 @@ div.why-icon-wrapper p.why-word{
 
 .tes-1-content{
   align-self: center;
-  padding-right: 100px; 
+  padding-right: 25px; 
 }
 
 .tes-1 div.tes-1-content p:nth-child(2){
   padding: 0;
   text-align: left;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .tes-1 div.tes-1-content p.fine-print,
@@ -296,15 +305,29 @@ div.why-icon-wrapper p.why-word{
 }
 
 .tes-logo-wrapper img{
-  max-width: 7rem;
+  max-width: 5rem;
 }
 
 /* Pricing */
+
+.pricing-content-wrapper{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+  gap: 20px;
+}
+
+.price-card{
+  grid-row: 1 / 4;
+  grid-column: 1 / 6;
+  padding: 40px;
+}
+
 .pricing div.price-card h2{
   padding: 0;
   text-align: left;
   display:inline-block;
-  font-size: 60px;
+  font-size: 40px;
 }
 
 .price-card h4{
@@ -313,12 +336,13 @@ div.why-icon-wrapper p.why-word{
   font-weight:500;
 }
 
-.price-card p{
-  margin-bottom: var(--size-20);
+.price-card hr{
+  margin: 18px 0;
 }
 
-.price-card hr{
-  margin: var(--size-24) 0;
+.price-card p{
+  margin-bottom: 14px;
+  font-size: 14px;
 }
 
 .price-card p:nth-child(6){
@@ -327,44 +351,45 @@ div.why-icon-wrapper p.why-word{
   color: var(--font-dark);
 }
 
-.pricing-content-wrapper{
-  display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 10px;
-}
-
-.price-card{
-  grid-row: span 3;
-  grid-column: span 4;
-  margin: 30px;
-  padding: 30px;
-
+.price-card div.btn{
+  margin-top: 64px;
+  max-width: fit-content;
 }
 
 .features-card{
-  grid-row: span 2;
-  grid-column: span 3;
+  grid-row: span 1;
+  grid-column: span 4;
   padding: var(--size-20);
 }
 
 div.features-card img{
+  width: 35px;
+  height: 35px;
   filter: drop-shadow(-5px 5px 2px var(--shadow))
 }
 
-.price-card div.btn{
-  margin-top: var(--size-64);
-  max-width: fit-content;
+.features-card p,
+.features-card h4{
+  margin: 10px 0 0;
+}
+
+.features-card p{
+  font-size: 14px;
 }
 
 /* Hire Us */
+section#hire-us.container{
+  background: url("../assets/abstract/hire-us-transparent-pattern-bg.svg");
+  background-color: var(--dark-navy);
+  padding-bottom: 25px;
+  margin-bottom: 150px;
+}
+
 .hire-us{
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
   color: white;
-  background: url("../assets/abstract/hire-us-transparent-pattern-bg.svg");
-  background-color: var(--dark-navy);
   padding: 40px 80px;
   overflow:auto;
 }
@@ -375,8 +400,8 @@ div.features-card img{
 
 div.hire-us div.hire-us-header h2,
 div.hire-us div.hire-us-header p{
-  padding: 0px 0px var(--size-14);
-  margin: 0px 0px 0px 0px;
+  padding: 0 0 var(--size-14);
+  margin: 0;
   text-align: left;
 }
 
@@ -400,19 +425,10 @@ div.hire-us div.hire-us-header p:nth-child(2){
 .hire-us-form{
   padding: 30px 54px 50px;
   margin: 0px;
+  gap: 20px;
   background-color: white;
-  gap: 30px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-template-areas:
-    "  .      .  "
-    "Title  Title"
-    "First  Last"
-    "Email  Site"
-    "Budget Country"
-    "More   More"
-    "Market Market"
-    "Button Button";
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
 }
 
 .hire-us p.quote{
@@ -421,54 +437,33 @@ div.hire-us div.hire-us-header p:nth-child(2){
 }
 
 .form-title{
-  grid-area: Title;
   color: var(--font-dark);
   text-align: left;
-}
-
-.form-first{
-  grid-area: First;
-}
-
-.form-last{
-  grid-area: Last;
-}
-
-.form-email{
-  grid-area: Email;
-}
-
-.form-site{
-  grid-area: Site;
-}
-
-.form-budget{
-  grid-area: Budget;
-}
-
-.form-country{
-  grid-area: Country;
+  grid-column: 1 / 7;
 }
 
 .form-more{
-  grid-area: More;
   font-size: 16px;
   padding: 5px;
-  height: 100px;
+  grid-column: span 7;
 }
 
 .form-market{
-  grid-area: Market;
-  padding: 25px 5px;
+  grid-column: span 7;
   display:flex;
   flex-direction: row;
   gap: 5px;
 }
 
+.hire-us-form input[type="checkbox" i]{
+  height: fit-content;
+  align-self: flex-start;
+}
+
 .form-button{
-  grid-area: Button;
+  grid-column: span 7;
   height: initial;
-  align-self: baseline;
+  align-items: top;
 }
 
 .hire-us-form h3{
@@ -480,10 +475,12 @@ div.hire-us div.hire-us-header p:nth-child(2){
   padding: 0 var(--size-5);
   font-size: var(--size-16);
   height: 50px;
+  grid-column: span 3;
 }
 
 .form-market .fine-print{
-  padding-right: 20px;
+  padding-right: 40px;
+  font-size: 14px;
 }
 
 .hire-us-form .btn{
@@ -552,7 +549,7 @@ footer{
 .footer-a .contact i,
 .footer-a .contact .fine-print,
 .footer-a section ul li a{
-  font-size: 16px;
+  font-size: 14px;
   color: var(--font-subheading);
 }
 
@@ -560,6 +557,7 @@ footer{
   background-color: var(--primary);
   color: var(--main-bg);
   border-radius: 7px;
+  font-size: 12px;
 }
 
 .footer-a section img{
