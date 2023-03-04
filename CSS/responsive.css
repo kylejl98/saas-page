@@ -1,6 +1,10 @@
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1024px){
   .container{
-    max-width: var(--responsive-max-width);
+    max-width: var(--desktop-width);
+  }
+
+  header nav i.fa-bars{
+    display: none;
   }
 
   section#hire-us.container{
@@ -8,7 +12,7 @@
   }
 
   section#hire-us.container div.hire-us{
-    max-width: var(--responsive-max-width);
+    max-width: var(--desktop-width);
     margin: auto;
   }
 
@@ -20,9 +24,87 @@
   }
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1023px){
+  .container{
+    box-sizing: border-box;
+    max-width: 568px;
+  }
+
+  header.container{
+    position: initial;
+    margin-bottom: 30px;
+  }
+/* TODO: WRITE JAVASCRIPT TO MAKE HAMBURGER MENU DROPDOWN APPEAR */
+  .header-demo{
+    display:none;
+  }
+
+  body .grad-background{
+    background: conic-gradient(from 82deg at 5% 90%, var(--main-bg)30%, var(--gradient-mid));
+  }
+
+  .nav-directory{
+    display:none;
+  }
+
+  header nav i.fa-bars{
+    display: block;
+    font-size: 18px;
+  }
+
+  header nav{
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  section#showcase.container{
+    padding-bottom: 0;
+
+  }
+
+  .showcase{
+    grid-template-columns: initial;
+    gap: 50px;
+  }
+
+  .intro-icons{
+    padding-bottom: 40px;
+  }
+
+  .intro-icons .intro-icon-wrapper:nth-child(1){
+    position:relative;
+    right: 60px;
+    
+  }
+  .intro-icons .intro-icon-wrapper:nth-child(2){
+    right: 100px;
+  }
+  
+  .intro-icons .intro-icon-wrapper:nth-child(3){
+    right: 80px;
+  }
+  
+  .intro-icons .intro-icon-wrapper:nth-child(4){
+    position: relative;
+    right: 65px;
+    top: 30px;
+  }
+  
+  .intro-icons .intro-icon-wrapper:nth-child(5){
+    left: initial;
+    right: 30px;
+    top: 30px;
+  }
+
+  .intro-icons .tab-hide{
+    display:none
+  }
+}
+
+@media screen and (max-width: 767px){
   .container{
     box-sizing: border-box;
     width: 967px;
+    display:none;
   }
 }
