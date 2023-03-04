@@ -15,21 +15,6 @@
   --shadow:         #999999;
   --shadow-light:   #ACACAC;
 
-  /*        Font Sizes       */
-  --size-5:   .3125rem;
-  --size-10:  .625rem;
-  --size-12:  .75rem;
-  --size-14:  .875rem;
-  --size-16:  1rem;
-  --size-20:  1.25rem;
-  --size-24:  1.5rem;
-  --size-30:  1.875rem;
-  --size-40:  2.5rem;
-  --size-50:  3.125rem;
-  --size-64:  4rem;
-  --size-100: 6.25rem;
-  --size-150: 9.375rem;
-
 
   --responsive-max-width: 1024px;
   --page-width: calc(calc(100vw - var(--responsive-max-width)) / 2);
@@ -45,7 +30,7 @@ body{
 .container{
   display:block;
   margin:auto;
-  padding-bottom: var(--size-150);
+  padding-bottom: 150px;
 }
 
 /**/
@@ -56,7 +41,7 @@ header.container{
   top:0;
   left:0;
   right:0;
-  padding:var(--size-5) 0 var(--size-10);
+  padding:5px 0 10px;
 }
 
 /**/
@@ -105,13 +90,13 @@ h5{
 /**/
 .container div p:nth-child(2){
   color:var(--font-subheading);
-  font-size: var(--size-14);
+  font-size: 14px;
   margin-bottom: 60px;
 }
 
 /**/
 .fine-print{
-  font-size: 12px;
+  font-size: 10px;
   color:#A4A5A6;
 }
 
@@ -137,7 +122,7 @@ a{
   border: 1px solid transparent;
   text-align: center;
   padding: 10px 10px;
-  border-radius: var(--size-24);
+  border-radius: 24px;
   background-color: var(--primary);
 }
 
@@ -162,7 +147,7 @@ li{
   padding: 4px 10px;
   font-size: 14px;
   border-radius: 16px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 /**/

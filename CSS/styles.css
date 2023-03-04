@@ -13,16 +13,16 @@ header{
 }
 
 .header-demo{
-  padding-bottom:var(--size-20);
+  padding-bottom:20px;
 }
 
 .header-demo > a > .fa-angle-left{
-  padding-right: var(--size-5); 
+  padding-right: 5px; 
 }
 
 .header-demo a:nth-child(2),
 .header-demo a:nth-child(3){
-  padding-left: var(--size-10);
+  padding-left: 10px;
 }
 
 .header-demo a{
@@ -30,7 +30,7 @@ header{
 }
 
 .header-demo a span.fa-angle-down{
-  padding-left: var(--size-5);
+  padding-left: 5px;
 }
 
 header nav img{
@@ -38,13 +38,14 @@ header nav img{
 }
 
 .dir-item{
-  display:inline-block;
-  padding-left: var(--size-20);
+  display: inline-block;
+  padding-left: 20px;
 }
 
-.dir-item.btn{
-  margin-left: var(--size-20);
+.nav-directory .btn{
+  margin-left: 20px;
   font-weight: 600;
+  display: inline-block;
 }
 
 /* Showcase */
@@ -59,13 +60,13 @@ header nav img{
 
 .container div.intro p{
   font-size: 18px;
-  padding: 0 0 var(--size-20);
+  padding: 0 0 20px;
   margin-bottom: 18px;
   text-align: left;
 }
 
 .intro .btn{
-  margin-right: var(--size-24);
+  margin-right: 24px;
 }
 
 .intro-icons{
@@ -359,7 +360,7 @@ div.why-icon-wrapper p.why-word{
 .features-card{
   grid-row: span 1;
   grid-column: span 4;
-  padding: var(--size-20);
+  padding: 20px;
 }
 
 div.features-card img{
@@ -400,7 +401,7 @@ section#hire-us.container{
 
 div.hire-us div.hire-us-header h2,
 div.hire-us div.hire-us-header p{
-  padding: 0 0 var(--size-14);
+  padding: 0 0 14px;
   margin: 0;
   text-align: left;
 }
@@ -423,33 +424,33 @@ div.hire-us div.hire-us-header p:nth-child(2){
 }
 
 .hire-us-form{
-  padding: 30px 54px 50px;
+  padding: 30px 30px 50px;
   margin: 0px;
   gap: 20px;
   background-color: white;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .hire-us p.quote{
-  font-size: 18px;
+  font-size: 14px;
   font-style: italic;
 }
 
 .form-title{
   color: var(--font-dark);
   text-align: left;
-  grid-column: 1 / 7;
+  grid-column: span 4;
 }
 
 .form-more{
-  font-size: 16px;
+  font-size: 14px;
   padding: 5px;
-  grid-column: span 7;
+  grid-column: span 4;
 }
 
 .form-market{
-  grid-column: span 7;
+  grid-column: span 4;
   display:flex;
   flex-direction: row;
   gap: 5px;
@@ -461,7 +462,7 @@ div.hire-us div.hire-us-header p:nth-child(2){
 }
 
 .form-button{
-  grid-column: span 7;
+  grid-column: span 4;
   height: initial;
   align-items: top;
 }
@@ -472,15 +473,15 @@ div.hire-us div.hire-us-header p:nth-child(2){
 
 .hire-us-form input, 
 .hire-us-form select{
-  padding: 0 var(--size-5);
-  font-size: var(--size-16);
+  padding: 0 5px;
+  font-size: 14px;
   height: 50px;
-  grid-column: span 3;
+  grid-column: span 2;
 }
 
 .form-market .fine-print{
   padding-right: 40px;
-  font-size: 14px;
+  font-size: 10px;
 }
 
 .hire-us-form .btn{
@@ -498,14 +499,14 @@ div.hire-us div.hire-us-header p:nth-child(2){
 
 .img-small{
   border-radius: 100%;
-  width: 30px;
-  height: 30px; 
+  width: 25px;
+  height: 25px; 
 }
 
 .img-large{
   border-radius: 100%;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
 /* Footer */
@@ -513,6 +514,7 @@ footer{
   display:flex;
   flex-direction: column;
   gap: 30px;
+  padding: 0 50px;
 }
 
 .footer-a,
@@ -549,7 +551,7 @@ footer{
 .footer-a .contact i,
 .footer-a .contact .fine-print,
 .footer-a section ul li a{
-  font-size: 14px;
+  font-size: 12px;
   color: var(--font-subheading);
 }
 
@@ -557,11 +559,15 @@ footer{
   background-color: var(--primary);
   color: var(--main-bg);
   border-radius: 7px;
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .footer-a section img{
-  max-width: 175px;
+  max-width: 125px;
+}
+
+.footer-b{
+  font-size: 12px;
 }
 
 .footer-b .ft-disclosure span{
