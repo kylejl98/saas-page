@@ -1,6 +1,22 @@
 @media screen and (min-width: 1200px){
   .container{
-    max-width: 1175px;
+    max-width: var(--responsive-max-width);
+  }
+
+  section#hire-us.container{
+    max-width: var(--background-width);
+  }
+
+  section#hire-us.container div.hire-us{
+    max-width: var(--responsive-max-width);
+    margin: auto;
+  }
+
+
+  header.container,
+  footer{
+    max-width:initial;
+    padding: 5px var(--page-width);
   }
 }
 
