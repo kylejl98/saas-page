@@ -26,8 +26,8 @@
 
 @media screen and (max-width: 1023px){
   .container{
-    box-sizing: border-box;
     max-width: 568px;
+
   }
 
   header.container{
@@ -97,7 +97,45 @@
   }
 
   .intro-icons .tab-hide{
-    display:none
+    display:none;
+  }
+
+  .benefit-card-group{
+    gap: 30px;
+  }
+
+  .benefit-card h3{
+    margin-top: 24px;
+    font-size: 24px;
+  }
+  
+  .benefit-card p{
+    margin-bottom: 60px;
+    font-size: 18px;
+  }
+
+  .perspectives{
+    flex-direction: column;
+    gap: 75px;
+    padding: 40px 30px 0px;
+  }
+
+  .perspective-info{
+    padding:0;
+  }
+  
+  .perspectives img{
+    max-width: calc(var(--tablet-content-width) - 60px);
+    align-self: center;
+  }
+
+  .container div.why-front p{
+    padding: 0;
+    font-size: 18px;
+  }
+
+  .why-icon-layout{
+    flex-direction: column;
   }
 }
 
