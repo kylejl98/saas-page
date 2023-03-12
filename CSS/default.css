@@ -18,6 +18,7 @@
 
   --desktop-width: 1024px;
   --tablet-page-width:   768px;
+  --tablet-min-width: calc(--tablet-page-width - 1px);
   --tablet-content-width: 568px;
   --mobile-width:   375px;
 
