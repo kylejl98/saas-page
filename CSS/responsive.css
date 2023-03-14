@@ -34,6 +34,10 @@
     max-width: var(--tablet-content-width);
   }
 
+  .fine-print{
+    font-size: 13px;
+  }
+
   header.container{
     position: initial;
     margin-bottom: 30px;
@@ -228,6 +232,7 @@
   /* Hire Us Section */
   section#hire-us.container{
     max-width: 100%;
+    margin-bottom: 75px;
   }
 
   .hire-us{
@@ -260,6 +265,40 @@
   .form-more{
     max-width: calc(100vw - 100px);
     height: 75px;
+  }
+
+  /* Footer */
+  footer{
+    padding: 0px 180px 40px 100px;
+  }
+
+  .footer-a{
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 50px;
+  }
+
+  .footer-a section{
+    grid-column: span 1;
+  }
+
+  .footer-a section:nth-child(1){
+    grid-column: span 2;
+  }
+
+  .footer-b{
+    flex-direction: column;
+    gap:20px;
+  }
+
+  .footer-c{
+    text-align: left;
+  }
+
+  .footer-a .contact i, 
+  .footer-a .contact .fine-print, 
+  .footer-a section ul li a,
+  .footer-b {
+    font-size: 16px;
   }
 }
 
