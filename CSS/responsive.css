@@ -42,7 +42,7 @@
     position: initial;
     margin-bottom: 30px;
   }
-/* TODO: WRITE JAVASCRIPT TO MAKE HAMBURGER MENU DROPDOWN APPEAR */
+  
   .header-demo{
     display:none;
   }
@@ -53,6 +53,24 @@
 
   .nav-directory{
     display:none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    align-items: center;
+    right: 220px;
+    top: 40px;
+    padding: 20px 30px;
+    background-color: var(--main-bg);
+    border-radius: 5px;
+    box-shadow: -10px 10px 40px 10px var(--shadow-light);
+  }
+
+  .dir-item{
+    padding: 0;
+  }
+
+  .nav-directory li.btn{
+    margin: 0;
   }
 
   header nav i.fa-bars{
@@ -67,7 +85,6 @@
 
   section#showcase.container{
     padding-bottom: 0;
-
   }
 
   .showcase{
@@ -77,6 +94,7 @@
 
   .intro-icons{
     padding-bottom: 40px;
+    padding-left: 0;
   }
 
   .intro-icons .intro-icon-wrapper:nth-child(1){
