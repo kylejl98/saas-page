@@ -320,14 +320,54 @@
   }
 }
 
-
-
-
-
 @media screen and (max-width: 767px){
   .container{
-    box-sizing: border-box;
-    width: 967px;
-    display:none;
+    max-width: 350px;
+    margin: 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
+
+  .intro{
+    padding: 0;
+  }
+
+  .intro h1{
+    font-size: 36px;
+  }
+
+  .intro-icons .intro-icon-wrapper:nth-child(1){
+    position:relative;
+    left: 25px;
+    right: initial;
+    
+  }
+  .intro-icons .intro-icon-wrapper:nth-child(2){
+    right: 25px;
+  }
+  
+  .intro-icons .intro-icon-wrapper:nth-child(3){
+    right: 30px;
+  }
+  
+  .intro-icons .intro-icon-wrapper:nth-child(4),
+  .intro-icons .intro-icon-wrapper:nth-child(5){
+    position: relative;
+    right: initial;
+    top: 35px;
+    left: 30px;
+  }
+
+  .tes-1-img img:nth-child(1){
+    max-width: 375px;
+  }
+
+  .tes-1-img-wrapper{
+    max-height: 530px;
+  }
+
+  
+
 }
