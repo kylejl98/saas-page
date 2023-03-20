@@ -3,7 +3,7 @@ const nav             = document.querySelector(".nav-directory").style;
 var   displayPrev = "none";
 
 const displayNav = () => {
-  if(window.innerWidth >= 1024){
+  if(window.screen.width >= 1024){
     nav.display = "inline-block";
   } 
   else {
@@ -19,9 +19,29 @@ const displayNav = () => {
 const alignNav = () => {
   let headerWidth = document.querySelector("nav").clientWidth;
   let navWidth = document.querySelector(".nav-directory").clientWidth;
-  let right = ((window.innerWidth - headerWidth) / 2) - (navWidth / 2);
+  let right = ((window.screen.width - headerWidth) / 2) - (navWidth / 2);
+  let logo = document.querySelector("header nav img").style;
 
-  nav.right = `${right}px`;
+  if(window.screen.width >= 768 && window.screen.width < 1024) {
+    nav.right = `${right}px`;
+    nav.left = 'initial';
+    nav.bottom = 'initial';
+    nav.top = 'initial';
+    nav.gap = 'initial';
+    nav.justifyContent = 'initial';
+  } else if (window.screen.width < 768){
+    nav.margin = 0;
+    nav.left = 0;
+    nav.right = 0;
+    nav.bottom = 0;
+    nav.top = 0;
+    nav.zIndex = 100;
+    nav.gap = '30px'
+    nav.justifyContent = 'center';
+    nav.maxWidth = window.screen.width;
+    hamburger.style.zIndex = 101;
+    logo.zIndex = 101;
+  }
 }
 
 const toggleMenu = () => {
