@@ -109,8 +109,6 @@ header nav img{
 }
 
 img.google-icon{
-  height:24px;
-  width: 24px;
   padding: 10px;
 }
 
@@ -180,7 +178,6 @@ img.google-icon{
 
 .perspectives img{
   align-self: flex-end;
-  min-width:0;
   width: 150%;
 
 }
@@ -387,9 +384,7 @@ section#hire-us.container{
 }
 
 .hire-us{
-  display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+  display:flex;
   color: white;
   padding: 40px 80px;
   overflow:auto;
@@ -430,6 +425,7 @@ div.hire-us div.hire-us-header p:nth-child(2){
   background-color: white;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  border-radius: 5px;
 }
 
 .hire-us p.quote{
@@ -454,6 +450,10 @@ div.hire-us div.hire-us-header p:nth-child(2){
   display:flex;
   flex-direction: row;
   gap: 5px;
+}
+
+.form-market span.fine-print span a{
+  text-decoration: underline dashed;
 }
 
 .hire-us-form input[type="checkbox" i]{
@@ -481,7 +481,7 @@ div.hire-us div.hire-us-header p:nth-child(2){
 
 .form-market .fine-print{
   padding-right: 40px;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .hire-us-form .btn{
@@ -515,9 +515,14 @@ footer{
   flex-direction: column;
   gap: 30px;
   padding: 0 50px;
+  max-width: var(--desktop-width);
 }
 
-.footer-a,
+.footer-a{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+}
+
 .footer-b,
 .footer-c{
   display:flex;
@@ -526,8 +531,13 @@ footer{
 }
 
 .footer-a section{
+  grid-column: span 2;
   display:flex;
   flex-direction: column;
+}
+
+.footer-a section:nth-child(1){
+  grid-column: span 3;
 }
 
 .footer-a section ul{
@@ -548,18 +558,18 @@ footer{
   padding-top: 20px;
 }
 
-.footer-a .contact i,
-.footer-a .contact .fine-print,
-.footer-a section ul li a{
-  font-size: 12px;
-  color: var(--font-subheading);
-}
-
 .footer-a section ul li .desc-tag{
   background-color: var(--primary);
   color: var(--main-bg);
   border-radius: 7px;
   font-size: 10px;
+}
+
+.footer-a .contact i,
+.footer-a .contact .fine-print,
+.footer-a section ul li a{
+  font-size: 12px;
+  color: var(--font-subheading);
 }
 
 .footer-a section img{
@@ -574,8 +584,28 @@ footer{
   padding: 0px 20px;
 }
 
+.footer-b .ft-social{
+  display: flex;
+  gap: 15px;
+}
+
+.footer-b select#region,
 .footer-b .ft-social a{
-  padding-right: 30px;
+  background-color: var(--light-grey);
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 12px;
+  border: none;
+}
+
+.footer-b .ft-social a{
+  width: 20px;
+  height: 20px;
+}
+
+.footer-b select#region{
+  color: var(--font-base)
 }
 
 .footer-c{

@@ -9,6 +9,7 @@
   --gradient-dark:  #bfc9d3;
   --gradient-mid:   #EEF2F6;
   --light-blue:     #f6f6ff;
+  --light-grey:     #E7E6E6;
   --link:           #4787FF;
   --main-bg:        #FFFFFF;
   --primary:        #377DFF;
@@ -16,8 +17,13 @@
   --shadow-light:   #ACACAC;
 
 
-  --responsive-max-width: 1024px;
-  --page-width: calc(calc(100vw - var(--responsive-max-width)) / 2);
+  --desktop-width: 1024px;
+  --tablet-page-width: 768px;
+  --tablet-min-width: 767px;
+  --tablet-content-width: 568px;
+  --mobile-width:   375px;
+
+  --page-width: calc(calc(100vw - var(--desktop-width)) / 2);
   --background-width: 100vw;
 }
 

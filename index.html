@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/d704123e13.js" crossorigin="anonymous"></script>
+    <script src="./JS/expandNav.js" defer></script>
+    
     <title>Front - SaaS Made Simple</title>
   </head>
 
@@ -24,6 +26,7 @@
         </section>
         <nav>
           <img src="./assets/project_logo/logo.svg" alt="Front Logo">
+          <i class="fa-solid fa-bars"></i>
           <ul class="nav-directory push-right">
             <li class="dir-item">
               <a href="#home">Home</a>
@@ -83,11 +86,11 @@
               <img src="./assets/logo_icons/weave.png" alt="Weave Logo">
             </div>
             
-            <div class="intro-icon-wrapper">
+            <div class="intro-icon-wrapper tab-hide">
               <img class="google-icon" src="./assets/logo_icons/google-A.png" alt="Google-A Logo">
             </div>
             
-            <div class="intro-icon-wrapper">
+            <div class="intro-icon-wrapper tab-hide">
               <img src="./assets/logo_icons/calendar.png" alt="Calendar Logo">
             </div>
           </div>
@@ -204,13 +207,14 @@
           <h5>TRUSTED BY THE WORLD'S BEST</h5>
           <div class="tes-logo-wrapper">
             <img src="./assets/company_logos/weebly.svg" alt="Weebly Logo">
-            <img src="./assets/company_logos/uber.svg" alt="Uber Logo">
-            <img src="./assets/company_logos/slack.svg" alt="Slack Logo">
-            <img src="./assets/company_logos/airbnb.svg" alt="Airbnb Logo">
+            <img class="tablet-hide" src="./assets/company_logos/uber.svg" alt="Uber Logo">
+            <img class="tablet-hide" src="./assets/company_logos/slack.svg" alt="Slack Logo">
+            <img class="airbnb" src="./assets/company_logos/airbnb.svg" alt="Airbnb Logo">
             <img src="./assets/company_logos/spotify.svg" alt="Spotify Logo">
           </div>
         </div>
     </section>
+    <hr>
     <section class="container" id="pricing">
       <div class="pricing">
         <h2>Pricing</h2>
@@ -541,13 +545,13 @@
               <option value="ZM">Zambia</option>
               <option value="ZW">Zimbabwe</option>
             </select>
-            <textarea class="form-more" name="more" id="more" placeholder="Tell us more about your project, needs, and timeline"></textarea>
+            <textarea class="form-more" name="more" id="more" placeholder="Tell us more about your project, needs, and timeline."></textarea>
             <div class="form-market">
               <input type="checkbox" required>
               <span class="fine-print">
                 Yes, I'd like to receive occasional marketing emails from Front. I have the right to opt out at any time.
                 <span>
-                  <a href="#">View privacy policy</a>
+                  <a href="#">View privacy policy.</a>
                 </span>
               </span>
             </div>
