@@ -22,14 +22,19 @@ const alignNav = () => {
   let right = ((window.screen.width - headerWidth) / 2) - (navWidth / 2);
   let logo = document.querySelector("header nav img").style;
 
-  if(window.screen.width >= 768 && window.screen.width < 1024) {
+  if(window.screen.width >= 1024){
+    nav.display = 'inline-block';
+    nav.marginLeft = 'auto';
+  }
+  else if(window.screen.width >= 768 && window.screen.width < 1024) {
     nav.right = `${right}px`;
     nav.left = 'initial';
     nav.bottom = 'initial';
-    nav.top = 'initial';
-    nav.gap = 'initial';
+    nav.top = '50px';
+    nav.gap = '20px';
     nav.justifyContent = 'initial';
-  } else if (window.screen.width < 768){
+  } 
+  else {
     nav.margin = 0;
     nav.left = 0;
     nav.right = 0;
@@ -56,7 +61,24 @@ const toggleMenu = () => {
   }
 }
 
+const stickyHeader = () => {
+  let navBar = document.querySelector("header.container").style
+  let scrollHeight = document.querySelector("html").scrollTop
+  
+  console.log(scrollHeight)
+
+  if(scrollHeight > 0){
+    navBar.backgroundColor = '#FFFFFF';
+    navBar.position = 'sticky';
+    navBar.top = 0;
+    navBar.left = 0;
+    navBar.right = 0;
+  }
+
+}
+
 hamburger.addEventListener("click", toggleMenu)
 
 window.addEventListener("resize", alignNav)
 window.addEventListener("resize", displayNav)
+window.addEventListener("scroll", stickyHeader)

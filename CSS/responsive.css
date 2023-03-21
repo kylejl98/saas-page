@@ -3,7 +3,7 @@
     max-width: var(--desktop-width);
   }
 
-  header nav i.fa-bars{
+  nav i.fa-bars{
     display: none;
   }
 
@@ -73,12 +73,12 @@
     margin: 0;
   }
 
-  header nav i.fa-bars{
+  nav i.fa-bars{
     display: block;
     font-size: 18px;
   }
 
-  header nav{
+  nav{
     justify-content: space-between;
     align-items: center;
   }
@@ -321,6 +321,19 @@
 }
 
 @media screen and (max-width: 767px){
+
+  body{
+    margin:0;
+  }
+
+  .container{
+    padding: 8px;
+  }
+
+  nav{
+    padding: 0 10px;
+  }
+
   ul.nav-directory li a{
     font-size: 36px;
   }
@@ -351,6 +364,14 @@
     left: 30px;
   }
 
+  .perspectives img{
+    max-width: 320px;
+  }
+
+  .why-front img{
+    max-width: 320px
+  }
+
   .tes-1-img-wrapper img:nth-child(1){
     width: 350px;
   }
@@ -378,6 +399,11 @@
   .price-card,
   .features-card{
     grid-column: span 6;
+  }
+
+  .hire-us-form input, 
+  .hire-us-form select{
+    grid-column: span 4;
   }
 
   footer{

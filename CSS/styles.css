@@ -6,9 +6,14 @@ body .grad-background{
 
 header{
   z-index: 100;
+  position:sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--gradient-mid);
 }
 
-.header-demo, header nav{
+.header-demo, nav{
   display:flex;
 }
 
@@ -33,7 +38,7 @@ header{
   padding-left: 5px;
 }
 
-header nav img{
+nav img{
   max-width: 8.43rem;
 }
 
@@ -134,6 +139,11 @@ img.google-icon{
 .benefit-card{
   padding: 20px;
   position: relative;
+}
+
+.benefit-card:hover{
+  position: relative;
+  bottom: 10px;
 }
 
 .benefit-card h3{
